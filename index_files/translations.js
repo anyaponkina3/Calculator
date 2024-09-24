@@ -47,8 +47,9 @@ function translatePage(language) {
   document.getElementById("precision-label").innerText = translation.precisionLabel;
   document.getElementById("calculate-button").innerText = translation.calculateButton;
   document.getElementById("help-title").innerText = translation.helpTitle;
-  document.getElementById("help-button").innerText = translation.supportButton;
   document.getElementById("number").placeholder = translation.number_value;
+  document.getElementById("help-button").innerText = translation.supportButton;
+  
 }
 
 // Обработчик для смены языка
