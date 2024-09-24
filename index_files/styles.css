@@ -1,4 +1,4 @@
-/* Общие стили для страницы */
+
 body {
   font-family: Arial, sans-serif;
   max-width: 600px;
@@ -7,13 +7,13 @@ body {
   background-color: #265577;
 }
 
-/* Контейнер для всей страницы */
+
 .page-container {
   background-color: #2196A3;
   border-radius: 90px;
 }
 
-/* Заголовок */
+
 .title {
   background-color: #F3FEE4;
   height: 125px;
@@ -28,7 +28,7 @@ h1 {
   font: "Istok Web";
 }
 
-/* Основной контент */
+
 .body {
   padding: 40px 60px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -36,36 +36,36 @@ h1 {
 
 /* Стили для всех ссылок */
 a {
-  text-decoration: none !important; /* Убираем подчеркивание */
+  text-decoration: none !important; 
 }
 
 /* Стили для всех полей ввода и кнопок */
 input, button {
   display: block;
-  width: calc(100% - 22px); /* Учитываем отступы и границы */
+  width: calc(100% - 22px); 
   padding: 10px;
-  margin: 10px auto; /* Центрирование элементов */
+  margin: 10px auto; 
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 90px;
   min-width: 300px;
 }
 
-/* Стили для подписей */
+
 label {
   color: #F3FEE4;
   font-size: 20px;
 }
 
-/* Стили для кнопок */
+
 button {
   font-size: 1.2em;
-  background-color: #E87F44; /* Сделали цвет кнопки таким же, как у помощи */
+  background-color: #E87F44; 
   color: white;
   border: none;
   cursor: pointer;
   width: 30%;
-  margin: 5px auto; /* Центрирование кнопки "Вычислить" */
+  margin: 5px auto; 
   min-width: 150px;
   display: flex;
   justify-content: center;
@@ -80,32 +80,31 @@ button:hover {
   background-color: #265577;
 }
 
-/* Стили для вывода результата */
+
 #result {
   font-size: 25px;
   margin-top: 20px;
   color: #F3FEE4;
 }
 
-/* Контейнер для всего контента */
+
 .container {
-  flex: 1; /* Позволяет контейнеру расширяться и заполнять доступное пространство */
+  flex: 1; 
 }
 
-/* Контейнер для блока с языковым переключателем и кнопкой помощи */
+
 .footer {
   background-color: #2196A3;
   border-radius: 0 0 90px 90px;
   display: flex;
-  justify-content: center; /* Центрируем кнопки */
+  justify-content: center; 
   padding: 16px;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-  align-items: center; /* Выровнять элементы по центру по вертикали */
-  gap: 30px; /* Постоянное расстояние между кнопками */
-}
+  align-items: center; 
+  gap: 30px; 
 
 
-/* Стили для select (выбор языка) и кнопки помощи */
+
 .footer select,
 .footer button {
   padding: 10px 20px;
@@ -113,20 +112,20 @@ button:hover {
   cursor: pointer;
   border: none;
   border-radius: 90px;
-  background-color: #E87F44; /* Цвет для обоих кнопок */
+  background-color: #E87F44; 
   color: white;
-  min-width: 150px; /* Сделаем кнопки одинакового размера */
+  min-width: 150px; 
   text-align: center;
 }
 
 .footer select:hover,
 .footer button:hover {
-  background-color: #265577; /* При наведении цвет будет одинаковым */
+  background-color: #265577; 
 }
 
 #language-select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; /* Убираем стрелочку у select */
+  appearance: none; 
   text-align: center;
 }
