@@ -6,9 +6,9 @@ function toRadians(degrees) {
   // Функция для удаления тригонометрических функций из выражения
   function removeTrigFunctions(expression) {
     return expression
-        .replace(/sin\((.*?)\)/g, 'sin($1)')  // Не изменяем
-        .replace(/cos\((.*?)\)/g, 'cos($1)')  // Не изменяем
-        .replace(/tan\((.*?)\)/g, 'tan($1)'); // Не изменяем
+        .replace(/sin\((.*?)\)/g, 'sin($1)')  
+        .replace(/cos\((.*?)\)/g, 'cos($1)')  
+        .replace(/tan\((.*?)\)/g, 'tan($1)'); 
   }
   
   // Функция для проверки наличия переменных в выражении
@@ -23,7 +23,7 @@ function toRadians(degrees) {
   // Функция для вычисления корня
   function calculateRoot() {
     let expression = document.getElementById("number").value;
-    let degree = 2; // Степень корня (фиксировано 2 для квадратного корня)
+    let degree = 2; // Степень корня 
     let precision = parseInt(document.getElementById("precision").value); // Количество знаков после запятой
   
     if (!expression) {
@@ -58,9 +58,7 @@ function toRadians(degrees) {
                 } else {
                     result = Math.sqrt(parsedExpression);  // Квадратный корень
                 }
-            } else {
-                result = math.pow(parsedExpression, 1 / degree);  // N-й корень
-            }
+            } 
   
             // Применение точности только к знакам после запятой, если это число
             if (typeof result === 'number') {
